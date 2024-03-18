@@ -10,8 +10,10 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    
+    position: sticky;
+    top: 0;
 }
+
 .navbar a{
     margin-right: 36px;
     text-align: right;
@@ -23,6 +25,7 @@ header{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 }
+
 #logo {
     color: black;
     font-size: 32px;
@@ -37,17 +40,17 @@ body{
     color: white;
 }
 #Main{
-    background-image: url('Wallpaper2.jpg');
+    background-image: url('Wallpaper2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgba(200, 100, 0, 0.5);
     background-blend-mode: multiply;
-
+    position: relative;
     color: whitesmoke;
     display: flex;
     align-items: center;
-    height: 90vh;
+    height: 95vh;
     padding: 0 10%;
 }
 
@@ -65,10 +68,18 @@ body{
 }
 #socials{
     position: absolute;
-    bottom: 40px;
-    width: 500px;
+    bottom: 15%; 
+    right: 1%; 
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; 
+    align-items: flex-end; 
+    transition: 0.7s;
+}
+#Main h3 span.bsit {
+    color: rgba(255, 220, 107, 0.767);
+}
+#Main h1 span.Hi {
+    color: rgba(255, 220, 107, 0.767);
 }
 #socials a{
     display: inline-flex;
@@ -77,20 +88,83 @@ body{
     width: 80px;
     height: 80px;
     font-size: 40px;
-    border: 4px solid rgb(245, 52, 245);
+    border: 4px solid rgba(255, 220, 107, 0.767);
     border-radius: 50%;
     text-decoration: none;
-    color: rgb(245, 52, 245);
+    color: rgba(255, 220, 107, 0.767);
     background: transparent;
     position: relative;
+    transition: color 0.3s ease-in;
+}
+#socials a:hover {
+    color: black;
+    background-color: white;
 }
 #Main2{
-    
-    background-color: plum;
-    color: whitesmoke;
+    background-image: url('Wallpaper4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(200, 100, 0, 0.5);
+    background-blend-mode: multiply;
+    position: relative;
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     padding: 0 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+#AboutMe h1{ 
+    font-size: 55px;
+    font-weight:700;
+}
+#AboutMe p{ 
+    font-size: 30px;
+    margin: 20px 0 40px;
+}
+#AboutMe {
+    margin-left: 50px; 
+}
+#borderpic{
+    border-radius: 50%;
+    border: 4px solid #fff; 
+    max-width: 500px; 
+    max-height: 500px; 
+    object-fit: cover; 
+    margin-right: 10px; 
+    margin-left: 10px; 
+}
+#AboutMe .btnbox {
+    height: 50px;
+    width: 345px;
+    
+}
+.btnbox {
+    position: relative;
+    display: inline-block;
 }
 
+.btnbox a {
+    width: 150px;
+    height: 100%;
+    background-color: rgb(151, 34, 116);
+    border-radius: 8px;
+    
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Work Sans";
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.3s;
+}
+.btnbox a:hover{
+  color:black;
+  background-color: white;
+}
