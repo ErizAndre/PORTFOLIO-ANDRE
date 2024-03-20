@@ -2,7 +2,11 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
+
+
+
 header{
     display: flex;
     background-color: white;
@@ -36,8 +40,7 @@ header{
     font-family: 'Work Sans' ,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body{
-    background-color: plum;
-    color: white;
+    
 }
 #Main{
     background-image: url('Wallpaper2.png');
@@ -52,6 +55,7 @@ body{
     align-items: center;
     height: 95vh;
     padding: 0 10%;
+    
 }
 
 
@@ -110,10 +114,11 @@ body{
     position: relative;
     display: flex;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     padding: 0 10%;
     align-items: center;
     justify-content: space-between;
+    color: white;
 }
 #AboutMe h1{ 
     font-size: 55px;
@@ -150,7 +155,6 @@ body{
     height: 100%;
     background-color: rgb(151, 34, 116);
     border-radius: 8px;
-    
     font-size: 19px;
     color: white;
     text-decoration: none;
@@ -165,6 +169,123 @@ body{
     transition: 0.3s;
 }
 .btnbox a:hover{
+  color:black;
+  background-color: white;
+}
+
+
+
+
+#resume-section {
+    width: 100%;
+	min-height: 100vh;
+	background-image: url('wallhaven.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(200, 100, 0, 0.5);
+    background-blend-mode: multiply;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+    width: 100%;
+    padding: 35px 10%;
+}
+.container{
+	padding-right: calc(10% - 30px);
+}
+
+main.row{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 20px;
+}
+
+.title{
+	font-family: helvetica;
+	color: skyblue;
+    z-index: 1;
+    padding: 0px 0px 20px 30px;
+}
+.col .contents{
+	padding: 0px 30px;
+	border-left: 2px solid white;
+}
+.col .contents .box{
+	position: relative;
+	padding: 20px;
+	border: 1px solid #eaeaea;
+	background-color: transparent;
+	cursor: pointer;
+	transition: all 0.4s;
+	margin-bottom: 20px;
+}
+.col .contents .box:hover{
+	box-shadow: 0px 3px 12px 0px white;
+	border: 1px solid transparent;
+}
+.col .contents .box::before{
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	right: calc(100% + 22px);
+	top: 0;
+	background-color:skyblue;
+	border: 2px solid white;
+}
+.box h4{
+	position: relative;
+	color: skyblue;
+}
+.box h3{
+	font-size: 19px;
+	padding: 10px 0px 6px;
+	font-family: helvetica;
+	color: #ffffff;
+}
+.box p{
+	line-height: 1.2;
+	color: #ffffff;
+	font-size: 17px;
+}
+@media(max-width: 768px){
+	main.row{
+		grid-template-columns: 1fr;
+	}
+	.row .col:nth-child(2){
+		margin-top: 30px;
+	}
+}
+
+.btnbox2 {
+    position: relative;
+    display: inline-block;
+}
+
+.btnbox2 a {
+    width: 200px;
+    height: 110%;
+    background-color: rgb(221, 77, 178);
+    border-radius: 8px;
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Work Sans";
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.3s;
+}
+.btnbox2 a:hover{
   color:black;
   background-color: white;
 }
