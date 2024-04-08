@@ -497,21 +497,21 @@ box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252,103,103,1)100%);
 }
 .html{
-    width: 60%;
+    width: 80%;
     animation: html 3s;
 }
 .css{
-    width: 50%;
+    width: 70%;
     animation: css 3s;
 }
 
 .cplus{
-    width: 90%;
+    width: 50%;
     animation: cplus 3s;
 }
 
 .csharp{
-    width: 60%;
+    width: 40%;
     animation: csharp 3s;
 }
 @keyframes html {
